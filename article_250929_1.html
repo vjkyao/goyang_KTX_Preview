@@ -56,7 +56,7 @@
             width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .back-to-top {
-            display: block; text-align: center; margin-top: 2rem;
+            display: block; text-align: center;
             padding: 0.8rem; background-color: #2c3e50; color: white;
             text-decoration: none; font-weight: 700; border-radius: 8px;
             transition: background-color 0.2s;
@@ -66,55 +66,13 @@
         }
         .footer {
             background: #2c3e50; color: white; text-align: center;
-            padding: 2.5rem 1rem; margin-top: 2rem;
+            padding: 2.5rem 1rem; margin-top: 1rem;
         }
-        .nav-articles {
-            padding: 2rem 1rem;
-            background-color: #e9ecef;
-            text-align: center;
-        }
-        .nav-articles h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-        }
-        .nav-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .nav-button {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background-color: #ffffff;
-            color: #2c3e50;
-            text-decoration: none;
-            font-weight: 700;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.2s ease;
-        }
-        .nav-button.active {
-            background-color: #00529b;
-            color: white;
-            transform: scale(1.1);
-        }
-        .nav-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-        }
-        .nav-button .icon { font-size: 1.5rem; }
-        .nav-button .text { font-size: 0.9rem; margin-top: 0.25rem; }
     </style>
 </head>
 <body id="top">
     <header class="header">
-        <a href="index.html"> <!-- 로고 클릭 시 메인 페이지로 이동 -->
+        <a href="index.html">
             <img src="images/logo.png" alt="전국철도노동조합 로고" class="header-logo">
             <h1>고양고속지부 웹진 |<span>전수교육특집</span></h1>
         </a>
@@ -166,24 +124,36 @@
         <p>정부는 SR의 '10% 저렴한 요금'을 경쟁의 효과로 내세우지만, 이는 불공정한 구조 속에서 탄생한 착시 효과에 불과하다. 코레일은 벽지노선 운영 등 모든 공적 의무(PSO)를 부담하는 반면, SR은 황금 노선인 경부·호남선 운행 독점권을 부여받았다. 이러한 구조적 불평등 속에서 발생하는 사회적 낭비는 2018년 국토교통부 연구용역 결과, 연간 559억 원에 달하는 것으로 추산됐다.</p>
         <img src="images/KTX_2.png" alt="나란히 서 있는 KTX와 SRT 열차">
         <p>전 세계가 실패를 인정하고 통합의 길로 나아가고 있는 지금, 한국 철도만 '분리'라는 낡은 유령에 사로잡혀 있을 이유는 없다. KTX-SRT 통합은 단순히 두 회사를 합치는 것을 넘어, 시대착오적인 정책을 바로잡고 한국 철도의 공공성과 효율성을 한 단계 끌어올리는 역사적 과업이다.</p>
-    </section>
-
-    <section class="nav-articles">
-        <h3>지난 기사 보기</h3>
-        <div class="nav-buttons">
-            <a href="#top" class="nav-button active">
-                <span class="icon">📖</span>
-                <span class="text">1편</span>
-            </a>
-            <a href="article_250929_2.html" class="nav-button">
-                <span class="icon">📖</span>
-                <span class="text">2편</span>
-            </a>
-            <a href="article_250929_3.html" class="nav-button">
-                <span class="icon">📖</span>
-                <span class="text">3편</span>
-            </a>
+        
+        <!-- 지난 기사 보기 -->
+        <div class="mt-12 pt-8 border-t-2 border-gray-200">
+            <h3 class="text-center text-lg font-bold text-gray-700 mb-4">집중기획 3부작</h3>
+            <div class="flex justify-center items-center space-x-4">
+                <!-- 1편 (현재 페이지) -->
+                <a href="#top" class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold border-4 border-blue-600 shadow-lg transform group-hover:scale-105 transition-transform">
+                        1편
+                    </div>
+                    <span class="mt-2 text-sm font-semibold text-blue-600">현재 기사</span>
+                </a>
+                <!-- 2편 -->
+                <a href="article_250929_2.html" class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-full bg-white text-gray-700 flex items-center justify-center text-xl font-bold border-4 border-gray-300 shadow-lg transform group-hover:scale-105 transition-transform group-hover:border-blue-500">
+                        2편
+                    </div>
+                     <span class="mt-2 text-sm font-semibold text-gray-600 group-hover:text-blue-500">다음 기사</span>
+                </a>
+                <!-- 3편 -->
+                <a href="article_250929_3.html" class="flex flex-col items-center text-center group">
+                     <div class="w-16 h-16 rounded-full bg-white text-gray-700 flex items-center justify-center text-xl font-bold border-4 border-gray-300 shadow-lg transform group-hover:scale-105 transition-transform group-hover:border-blue-500">
+                        3편
+                    </div>
+                     <span class="mt-2 text-sm font-semibold text-gray-600 group-hover:text-blue-500">마지막 기사</span>
+                </a>
+            </div>
         </div>
+
+        <a href="index.html" class="back-to-top mt-8">목차로 돌아가기</a>
     </section>
     
     <footer class="footer">
@@ -192,3 +162,4 @@
     </footer>
 </body>
 </html>
+
