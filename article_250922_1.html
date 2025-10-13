@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연재기사 1편: 보이지 않는 전선</title>
+    <title>고양고속지부 웹진 | 연재기사 1편</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
+        /* 다른 연재기사와 스타일 통일 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             line-height: 1.7; color: #333; background-color: #f4f6f8;
         }
+        .header {
+            background: #ffffff; padding: 0.8rem 1rem; text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: sticky; top: 0;
+            z-index: 1000; border-bottom: 3px solid #00529b;
+        }
+        .header a {
+            text-decoration: none; color: inherit; display: flex;
+            align-items: center; justify-content: center; gap: 0.5rem;
+        }
+        .header-logo { max-width: 150px; height: auto; }
+        .header h1 {
+            font-size: 0.9rem; font-weight: 700; color: #2c3e50; white-space: nowrap;
+        }
+        .header h1 span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: 0.25rem;
+        }
         .article-section {
-            padding: 2rem 1rem; margin: 1rem auto; background-color: white; max-width: 800px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem 1rem; margin-top: 1rem; background-color: white; max-width: 800px; margin-left: auto; margin-right: auto;
         }
         .article-section h2 {
             font-size: 1.6rem; color: #1a3a5f; margin-bottom: 1.5rem;
@@ -22,10 +44,7 @@
         .article-section h3 {
             font-size: 1.3rem; font-weight: 700; color: #1a3a5f; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid #ddd; padding-bottom: 0.5rem;
         }
-        .article-section p {
-            font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #333; text-align: justify;
-        }
-        .article-section .lead {
+         .article-section .lead {
              font-size: 1.1rem;
              font-weight: 600;
              color: #333;
@@ -34,18 +53,14 @@
              background-color: #f8f9fa;
              border-left: 5px solid #00529b;
         }
-        .article-section strong {
-            font-weight: 700;
+        .article-section p {
+            font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem; color: #333; text-align: justify;
         }
         .article-section img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .back-to-top {
-            display: block; text-align: center; margin-top: 2rem;
+            display: block; text-align: center;
             padding: 0.8rem; background-color: #2c3e50; color: white;
             text-decoration: none; font-weight: 700; border-radius: 8px;
             transition: background-color 0.2s;
@@ -53,10 +68,22 @@
         .back-to-top:hover {
             background-color: #1a3a5f;
         }
+        .footer {
+            background: #2c3e50; color: white; text-align: center;
+            padding: 2.5rem 1rem; margin-top: 1rem;
+        }
     </style>
 </head>
 <body id="top">
-    <section class="article-section" id="article_250922_1">
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="전국철도노동조합 로고" class="header-logo">
+            <h1>고양고속지부 웹진 |<span>전수교육특집</span></h1>
+        </a>
+    </header>
+
+    <!-- Full Article Section -->
+    <section class="article-section">
         <h2>[연재기사] 1편: 보이지 않는 전선 – 분열과 경쟁을 통한 노조 무력화 전략</h2>
 
         <p class="lead">정부와 공공기관 사측이 추진하는 정책들 이면에는 종종 '노동조합 무력화'라는 숨은 의도가 발견됩니다. 철도의 공공성을 지키고 노동자의 권익을 대변하는 단결된 목소리는 민영화나 구조조정을 추진하는 입장에서 가장 큰 걸림돌이기 때문입니다. 물리적 탄압만큼이나 집요하게 구축되는 '보이지 않는 전선'은 연대를 내부로부터 허물어뜨려려 합니다. 성과급·직무급제 도입이나 조직 분할을 통한 갈등 유발 등은 단순한 임금체계 개편을 넘어, 동료를 경쟁자로 만들고 연대를 불신으로 바꾸려는 계산된 전략으로 읽힙니다.</p>
@@ -83,8 +110,40 @@
         <p>더욱 중요한 것은, 이러한 '무풍지대' 속에서 노동조합의 본질적인 역할인 '경영에 대한 견제와 감시' 기능이 제대로 작동했는지에 대한 의문입니다. SR의 10년 무분규는 강력한 노동조합이 부재할 때, 자본과 권력이 얼마나 손쉽게 공공의 이익을 사유화할 수 있는지를 보여주는 사례일 수 있습니다. 노동조합의 투쟁은 단순히 임금 인상을 넘어, 경영진의 독단과 전횡을 막고 철도의 공공성과 노동자의 존엄을 지키는 최소한의 방어선입니다.</p>
         <img src="images/WU1_9.png" alt="노동조합의 방어선 상징 이미지">
 
-        <a href="index.html" class="back-to-top">목차로 돌아가기</a>
+        <!-- 지난 기사 보기 (연재기사 3부작용) -->
+        <div class="mt-12 pt-8 border-t-2 border-gray-200">
+            <h3 class="text-center text-lg font-bold text-gray-700 mb-4">연재기사 3부작</h3>
+            <div class="flex justify-center items-center space-x-4">
+                <!-- 1편 (현재 페이지) -->
+                <a href="#top" class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold border-4 border-blue-600 shadow-lg transform group-hover:scale-105 transition-transform">
+                        1편
+                    </div>
+                    <span class="mt-2 text-sm font-semibold text-blue-600">현재 기사</span>
+                </a>
+                <!-- 2편 -->
+                <a href="article_251013_1.html" class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-full bg-white text-gray-700 flex items-center justify-center text-xl font-bold border-4 border-gray-300 shadow-lg transform group-hover:scale-105 transition-transform group-hover:border-blue-500">
+                        2편
+                    </div>
+                     <span class="mt-2 text-sm font-semibold text-gray-600 group-hover:text-blue-500">다음 기사</span>
+                </a>
+                <!-- 3편 -->
+                <a href="article_251013_2.html" class="flex flex-col items-center text-center group">
+                     <div class="w-16 h-16 rounded-full bg-white text-gray-700 flex items-center justify-center text-xl font-bold border-4 border-gray-300 shadow-lg transform group-hover:scale-105 transition-transform group-hover:border-blue-500">
+                        3편
+                    </div>
+                     <span class="mt-2 text-sm font-semibold text-gray-600 group-hover:text-blue-500">마지막 기사</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-to-top mt-8">목차로 돌아가기</a>
     </section>
+
+    <footer class="footer">
+        <h3>전국철도노동조합 고양고속차량지부</h3>
+        <p>© 2025 전국철도노동조합 고양고속차량지부 all rights reserved </p>
+    </footer>
 </body>
 </html>
-
