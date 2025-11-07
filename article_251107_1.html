@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>[심층기획] 통상임금 ‘시수 꼼수’, 법보다 유리한 단협을 이길 수 없다!</title>
-    <meta name="description" content="2024년 대법원 전원합의체 판결의 의미와 사측 논리의 오류, 철도노조의 대응 전략을 분석한 웹진 기사" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고양고속지부 웹진 | 통상임금 심층기획</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #222; margin: 0; background: #fff; }
-        header { position: sticky; top: 0; background: #f7fbff; z-index: 1000; border-bottom: 3px solid #00529b;
-            box-shadow: 0 2px 8px rgba(0,0,0,.05); }
-        .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
-        .title { padding: 28px 0 18px; }
-        .title h1 { margin: 0; font-size: 28px; color: #003a72; }
-        .title p { margin: 6px 0 0; color: #4a4a4a; }
-        figure { margin: 28px 0; }
-        figure img { width: 100%; height: auto; border-radius: 8px; }
-        figcaption { font-size: 14px; color: #6b7280; margin-top: 6px; }
-        main { padding: 28px 0 80px; }
-        h2 { font-size: 22px; margin: 36px 0 10px; color: #0b3d91; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.7; color: #333; background-color: #f4f6f8;
+        }
+        .header {
+            background: #ffffff; padding: 0.8rem 1rem; text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); position: sticky; top: 0;
+            z-index: 1000; border-bottom: 3px solid #00529b;
+        }
+        .container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+        .title { font-size: 28px; color: #003a72; font-weight: 900; margin: 4px 0 6px; }
+        .subtitle { color: #4a5568; font-size: 14px; }
+        .lead { padding: 14px 16px; background: #f9fafb; border-left: 4px solid #0b3d91; border-radius: 6px; margin: 18px 0; font-weight: 600; }
+        h2 { font-size: 22px; color: #0b3d91; margin: 28px 0 10px; }
         p { margin: 12px 0; }
-        .lead { font-weight: 600; color: #1f2937; background: #f9fafb; padding: 14px 16px; border-left: 4px solid #0b3d91; border-radius: 6px; }
-        .summary { background: #fbfef7; border: 1px solid #d7f0bd; padding: 14px 16px; border-radius: 8px; }
+        .article-image { width: 100%; height: auto; border-radius: 8px; margin: 18px 0 6px; }
+        .caption { font-size: 13px; color: #6b7280; margin-bottom: 22px; }
+        .summary { background: #fbfef7; border: 1px solid #d7f0bd; padding: 14px 16px; border-radius: 8px; margin: 24px 0; }
         .note { font-size: 13px; color: #6b7280; }
-        footer { background: #f8fafc; border-top: 1px solid #e5e7eb; color: #4b5563; }
-        footer .wrap { padding: 22px 20px; }
-        .alt { font-style: italic; color: #6b7280; }
+        footer { background: #f8fafc; border-top: 1px solid #e5e7eb; color: #4b5563; margin-top: 40px; }
+        footer .container { padding: 22px 16px; }
     </style>
 </head>
 <body>
-<header>
-    <div class="wrap title">
-        <h1>전국철도노동조합 고양고속차량지부 웹진</h1>
-        <p class="note">[심층기획] 통상임금 ‘시수 꼼수’, 법보다 유리한 단협을 이길 수 없다!</p>
+
+<header class="header">
+    <div class="container">
+        <img src="images/logo.png" alt="고양고속차량지부 로고" style="height:42px;">
+        <div class="title">전국철도노동조합 고양고속차량지부 웹진</div>
+        <div class="subtitle">[심층기획] 통상임금 ‘시수 꼼수’, 법보다 유리한 단협을 이길 수 없다!</div>
     </div>
 </header>
 
-<main class="wrap">
+<main class="container">
 
     <p class="lead">2024년 12월 19일, 대법원 전원합의체 판결(2020다247190)은 왜곡된 통상임금 체계를 바로잡은 역사적 전환점입니다. 사측의 ‘분모(시수) 바꾸기’로 판결의 효과를 무력화하려는 시도를 법리와 단결로 차단해야 합니다.</p>
 
-    <figure>
-        <img src="images/LSA_01.png" alt="근로기준법 15를 상징하는 법전 위에 손을 올린 철도노동자 이미지" />
-        <figcaption>근로기준법 제15조의 원칙(유리한 조건 우선)을 상징</figcaption>
-    </figure>
+    <img src="images/LSA_0.png" alt="근로기준법 15를 상징하는 법전 위에 손을 올린 철도노동자 이미지" class="article-image">
+    <div class="caption">근로기준법 제15조의 원칙(유리한 조건 우선)을 상징</div>
 
     <h2>대법원 판결의 의미 — 왜곡의 빗장을 해체하다</h2>
     <p>그동안 ‘고정성’이라는 말은 사측이 노동자의 정당한 임금을 축소하기 위한 수단으로 악용되어 왔습니다. “지급일 현재 재직 중인 자”, “월 15일 이상 근무 시”와 같은 편법적 조건을 내세워, 우리가 매달 받아온 급식비와 각종 수당, 상여금조차 통상임금이 아니라고 우겨온 것입니다.</p>
     <p>이번 전원합의체 판결은 ‘재직 조건’ 같은 형식 요건과 무관하게, 노동의 대가로 정기적·일률적으로 지급되는 금품은 통상임금이라는 대원칙을 다시 세웠습니다. 이로써 기존 6개 항목에 더해 상여금, 급식비, 업무지원수당 등 8개 항목이 통상임금에 새롭게 포함되었습니다.</p>
 
-    <figure>
-        <img src="images/LSA_02.png" alt="법과 단협의 기준을 상징하는 14와 209 숫자 문서가 맞닿는 이미지" />
-        <figcaption>항목은 법대로(14), 시수는 단협대로(209) — 정당한 구분</figcaption>
-    </figure>
+    <img src="images/LSA_2.png" alt="법과 단협의 기준을 상징하는 14와 209 숫자 문서가 맞닿는 이미지" class="article-image">
+    <div class="caption">항목은 법대로(14), 시수는 단협대로(209) — 정당한 구분</div>
 
     <h2>사측의 ‘분모 확대’ — 승리의 과실을 줄이려는 계산</h2>
     <p>사측은 통상임금 항목(분자)은 마지못해 인정하면서, 시급을 계산하는 기준인 시수(분모)를 바꾸겠다고 일방 통보했습니다. ‘고용노동부 지침’을 핑계로 수십 년간 노사가 합의해 온 단체협약상의 209시간을 무시하고, 근무형태별 법정 시수(교대 216시간, 교번 242시간 등)를 적용하겠다는 것입니다. 이는 분모를 인위적으로 늘려 시급을 낮추는 명백한 임금 삭감 시도입니다.</p>
 
-    <figure>
-        <img src="images/LSA_03.png" alt="209에서 242로 바뀌는 계산기 숫자와 스파크를 상징하는 이미지" />
-        <figcaption>분모를 바꿔 통상임금의 시급을 깎으려는 조작</figcaption>
-    </figure>
+    <img src="images/LSA_3.png" alt="209에서 242로 바뀌는 계산기 숫자와 스파크를 상징하는 이미지" class="article-image">
+    <div class="caption">분모를 바꿔 통상임금의 시급을 깎으려는 조작</div>
 
     <h2>사측의 논리 “유리한 것만 고르지 마라” — 그럴듯한 기만</h2>
     <p>사측은 ‘유리한 조건 취사선택 금지’라는 낯선 법리를 들며, “항목은 법대로 늘리면서 시수만 단협 209시간을 고집하느냐”고 주장합니다. 언뜻 공평해 보이지만 핵심을 비튼 논리입니다.</p>
@@ -67,53 +70,41 @@
     <h2>우리의 반박 — 취사선택이 아니라 유리한 조건 우선 원칙</h2>
     <p>근로기준법 제15조는 ‘이 법 기준에 미치지 못하는 근로조건은 무효’라고 규정합니다. 법은 최소 기준이며, 그보다 유리한 단체협약은 존중되어야 합니다. 노동부의 행정해석은 사법부 판결보다 하위이며, 노사 자치의 최고 규범인 단체협약의 효력을 일방적으로 정지시킬 수 없습니다.</p>
 
-    <figure>
-        <img src="images/LSA_04.png" alt="법전 15 숫자와 저울, 선로 픽토그램이 결합된 상징 이미지" />
-        <figcaption>법의 최소 기준 위에 선 노사 자치(단협)의 우선성</figcaption>
-    </figure>
+    <img src="images/LSA_4_1.png" alt="법전 15 숫자와 저울, 선로 픽토그램이 결합된 상징 이미지" class="article-image">
+    <div class="caption">법의 최소 기준 위에 선 노사 자치(단협)의 우선성</div>
 
     <h2>항목은 법대로, 시수는 단협대로 — 법리의 정당한 구분</h2>
     <p>2024년 대법원 판결로 8개 항목이 통상임금에 추가되면서, 과거 통상임금에서 제외됐던 단협 조항은 법정 기준에 미달한 무효 조항이 되었습니다. 따라서 법에서 정한 기준(14개 항목)을 적용하는 것은 선택이 아니라 법이 강제한 시정조치입니다.</p>
     <p>반면 시수 문제는 다릅니다. 교대·교번 근무자의 경우 단협상 209시간은 사측이 주장하는 법정 시수(216시간, 242시간)보다 조합원에게 유리합니다. 법보다 유리한 단협 조항은 근로기준법이 보장하는 노동자의 권리이며, 사측은 이를 준수해야 합니다.</p>
 
-    <figure>
-        <img src="images/LSA_05.png" alt="복도에서 14와 209 사이의 빛을 향해 걸어가는 철도노동자" />
-        <figcaption>법의 기준(14)과 단협 기준(209) 사이, 올바른 길로 전진</figcaption>
-    </figure>
+    <img src="images/LSA_5.png" alt="복도에서 14와 209 사이의 빛을 향해 걸어가는 철도노동자" class="article-image">
+    <div class="caption">법의 기준(14)과 단협 기준(209) 사이, 올바른 길로 전진</div>
 
     <h2>야간격일제 — 209에서 187로 바로잡아 체불을 회수한다</h2>
     <p>야간격일제 근무자의 경우 근로기준법상 월 통상임금 산정 기준은 187시간입니다. 그러나 사측은 지금까지 단협 일괄 기준인 209시간을 적용해 왔습니다. 이는 법이 보장한 기준보다 불리한 계산 방식으로, 결과적으로 근로기준법에 미달하는 시수를 적용해 온 것입니다.</p>
     <p>이 잘못된 분모 적용으로 발생한 차액을 노조는 체불임금으로 회수하기 위한 소송을 진행 중입니다. 이는 단순한 법리 투쟁이 아니라, 조합원 1인당 수십만 원에서 수백만 원대의 실질적 임금 회수로 이어질 수 있는 정당한 투쟁입니다.</p>
 
-    <figure>
-        <img src="images/LSA_06.png" alt="209 모래시계는 비어가고 187 모래시계는 황금빛으로 차오르는 대비 이미지" />
-        <figcaption>불리했던 209에서 정당한 187로 — 차액 회수의 상징</figcaption>
-    </figure>
+    <img src="images/LSA_6.png" alt="209 모래시계는 비어가고 187 모래시계는 황금빛으로 차오르는 대비 이미지" class="article-image">
+    <div class="caption">불리했던 209에서 정당한 187로 — 차액 회수의 상징</div>
 
     <!-- [LSA_7.png] 이미지 추가 -->
-    <figure>
-        <img src="images/LSA_07.png" alt="세트메뉴 비유: 깨끗한 재료와 불량 재료를 명확히 구분한 대비 이미지" />
-        <figcaption>‘세트메뉴 협상’의 기만 — 시정은 협상이 아니라 교체</figcaption>
-    </figure>
+    <img src="images/LSA_7.png" alt="세트메뉴 비유" class="article-image">
+    <div class="caption">‘세트메뉴 협상’의 기만 — 시정은 협상이 아니라 교체</div>
 
     <!-- [LSA_8.png] 이미지 추가 -->
-    <figure>
-        <img src="images/LSA_08.png" alt="단결 투쟁: 여러 철도노동자의 결의를 상징적으로 표현한 이미지" />
-        <figcaption>흔들림 없는 단결로 정면 돌파</figcaption>
-    </figure>
+    <img src="images/LSA_8.png" alt="단결 투쟁" class="article-image">
+    <div class="caption">흔들림 없는 단결로 정면 돌파</div>
 
     <h2>사측의 ‘세트메뉴 협상’ 논리, 왜 틀렸는가</h2>
     <p>사측이 말하는 ‘세트메뉴 협상’은 어불성설입니다. 통상임금의 ‘분자’, 즉 항목 확대는 이미 대법원의 시정조치로 확정된 사안이며 협상의 대상이 아닙니다. 사측은 이 확정된 항목을 건드릴 수 없게 되자, 억지로 ‘분모(시수)’를 바꿔 전체 계산을 줄이려는 꼼수를 내놓았습니다. 우리가 논의해야 할 것은 그 위에 올릴 정상적인 구성과 양, 즉 조합원에게 실질적 이익이 되는 시수 기준입니다.</p>
 
-    <figure>
-        <img src="images/LSA_09.png" alt="계산기의 분모 숫자를 조작해 시급을 낮추려는 손을 상징하는 이미지" />
-        <figcaption>진짜 쟁점은 분모 조작 — 임금 삭감의 계산을 멈춰라</figcaption>
-    </figure>
+    <img src="images/LSA_4.png" alt="계산기의 분모 숫자를 조작해 시급을 낮추려는 손을 상징하는 이미지" class="article-image">
+    <div class="caption">진짜 쟁점은 분모 조작 — 임금 삭감의 계산을 멈춰라</div>
 
     <h2>흔들림 없는 단결로 정면 돌파하자</h2>
     <p>노동조합 중앙쟁의대책위원회는 사측의 일방적인 단협 위반에 맞서, 교섭 요구와 함께 즉각적인 법적 대응에 돌입할 것입니다. 우리는 교대·교번 조합원을 위해 ‘단협 209시간’ 적용을 요구하는 임금 차액 청구 소송과, 야간격일제 조합원을 위해 ‘법정 187시간’ 적용을 요구하는 임금 체불 청구 소송을 동시에 진행할 것입니다.</p>
     <p>이는 모순이 아니라, “조합원에게 가장 유리한 조건을 적용한다”는 근로기준법의 대원칙을 일관되게 관철하는 것입니다. 동지 여러분, 사측의 그럴듯한 논리 뒤에는 언제나 임금 삭감의 계산이 숨어 있습니다. 우리의 요구는 법과 원칙에 근거한 정당한 권리입니다. 이 기사의 내용을 현장 곳곳에 전파해 주십시오. 집행부를 믿고, 소송인단 모집과 향후 투쟁에 흔들림 없이 함께해 주십시오.</p>
-    <p>이 싸움은 한 사람의 임금이 아니라 모든 철도 노동자의 기준을 지키는 싸움입니다. 우리의 단결된 힘만이 사측의 꼼수를 분쇄하고 승리를 완성할 수 있습니다. 투쟁!</p>
+    <p><strong>이 싸움은 한 사람의 임금이 아니라 모든 철도 노동자의 기준을 지키는 싸움입니다.</strong> 우리의 단결된 힘만이 사측의 꼼수를 분쇄하고 승리를 완성할 수 있습니다. <strong>투쟁!</strong></p>
 
     <div class="summary">
         <strong>기사 핵심 요약</strong>
@@ -126,12 +117,12 @@
         </ul>
     </div>
 
-    <p class="note alt">이미지 가이드: 방사형 태양광선(욱일기 유사 패턴) 금지. 필요한 경우 추상적 빛 또는 단색 그라데이션을 사용.</p>
+    <p class="note">이미지 가이드: 방사형 태양광선(욱일기 유사 패턴) 금지. 필요한 경우 추상적 빛 또는 단색 그라데이션을 사용.</p>
 
 </main>
 
 <footer>
-    <div class="wrap">
+    <div class="container">
         <p>전국철도노동조합 고양고속차량지부</p>
         <p class="note">본 웹진의 모든 문구와 이미지는 조합원 교육과 조직 강화를 위한 내부 자료입니다.</p>
     </div>
