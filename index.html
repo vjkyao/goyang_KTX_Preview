@@ -33,6 +33,40 @@
             font-weight: 500;
             margin-left: 0.25rem;
         }
+        /* 메인 이미지 텍스트 오버레이를 위한 스타일 */
+        .main-image-section {
+            position: relative;
+        }
+        .main-image-section a {
+            display: block;
+            position: relative;
+        }
+        .main-image-overlay {
+            position: absolute;
+            inset: 0; /* top/bottom/left/right = 0 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.4); /* 어두운 오버레이 */
+            transition: background-color 0.3s ease;
+        }
+        .main-image-overlay:hover {
+            background-color: rgba(0, 0, 0, 0.2); /* 호버 시 살짝 밝게 */
+        }
+        .main-image-overlay h2 {
+            color: white;
+            font-size: 1.5rem; /* 모바일 우선 */
+            font-weight: 900;
+            text-align: center;
+            padding: 1rem;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        @media (min-width: 768px) { /* 데스크탑에서 폰트 크기 증가 */
+            .main-image-overlay h2 {
+                font-size: 1.25rem; /* 2.5rem에서 절반 수준으로 수정 */
+            }
+        }
+
         .toc-section { padding: 2rem 1rem; background-color: #ffffff; }
         .toc-section a { text-decoration: none; color: inherit; }
         .article-card {
@@ -44,6 +78,14 @@
         .article-card:hover {
             transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
         }
+        /* 새 기사 강조 스타일 */
+        .article-card-new {
+            border-left-color: #D9534F; /* 붉은색으로 강조 */
+        }
+        .article-card-new h3 {
+            color: #D9534F !important; /* 제목 붉은색 */
+        }
+
         .article-thumbnail {
             width: 90px; height: 90px; border-radius: 4px; object-fit: cover; flex-shrink: 0;
         }
@@ -59,6 +101,13 @@
             background: #2c3e50; color: white; text-align: center;
             padding: 2.5rem 1rem; margin-top: 2rem;
         }
+        .footer p {
+            margin: 0;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+        }
+        /* '독자의 투고' 링크용 스타일 복원 */
         .footer a {
             color: inherit; text-decoration: none;
         }
@@ -76,7 +125,16 @@
     </header>
 
     <section class="main-image-section">
-        <img src="images/wscup.jpg" alt="고양고속지부 웹진 메인 이미지" class="w-full h-auto">
+        <!-- 메인 이미지 및 링크 수정 -->
+        <a href="article_251107_1.html">
+            <img src="images/LSA_0.png" alt="통상임금 심층기획" class="w-full h-auto">
+            <div class="main-image-overlay">
+                <!-- 오버레이 텍스트 크기 수정 -->
+                <h2 class="text-white text-xl md:text-2xl font-black text-center p-4" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                    [심층기획] 통상임금 시수 꼼수, 그 진실은?
+                </h2>
+            </div>
+        </a>
     </section>
 
     <section class="toc-section">
@@ -112,6 +170,17 @@
 
         <h2 class="text-xl font-black text-center mb-6 text-gray-800">전체 기사 목록</h2>
         
+        <!-- 신규 통상임금 기사 추가 -->
+        <a href="./article_251107_1.html">
+            <div class="article-card article-card-new"> <!-- 새 기사 강조 클래스 추가 -->
+                 <img src="images/LSA_5.png" alt="통상임금 기사" class="article-thumbnail">
+                <div class="article-content">
+                    <h3 class="text-red-700">[심층기획] 통상임금 ‘시수 꼼수’, 법보다 유리한 단협을 이길 수 없다!</h3>
+                    <p>2024년 대법원 판결의 완전한 이행, 사측의 논리 왜곡을 바로잡는다.</p>
+                </div>
+            </div>
+        </a>
+        
         <!-- 집중기획 3부작 (목록 내 블록) -->
         <div class="mb-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
             <h3 class="text-lg font-bold text-center mb-1 text-gray-700">[집중기획 3부작]</h3>
@@ -141,15 +210,8 @@
             </div>
         </div>
 
-        <a href="./article_250923_1.html">
-            <div class="article-card">
-                 <img src="images/Coun_1.jpg" alt="대의원대회 이미지" class="article-thumbnail">
-                <div class="article-content">
-                    <h3>[특별호] 11월, 우리의 손으로 통합을!</h3>
-                    <p>9.17 임시대의원대회 핵심 결과 보고와 수정된 일정 로드맵.</p>
-                </div>
-            </div>
-        </a>
+        <!-- 250923_1.html 기사 삭제됨 -->
+
         <a href="./article2.html">
             <div class="article-card">
                  <img src="images/KTX_worker1.png" alt="근골격계 조사 이미지" class="article-thumbnail">
@@ -166,21 +228,18 @@
                     <h3>[특급작전] 그대, 기름때 묻은 손으로 피리를 불어라!</h3>
                     <p>지부, 투쟁 플루트 1기 대원 극비 모집! 당신의 메마른 감수성을 풀충전할 기회!</p>
                 </div>
+Check
             </div>
         </a>
     </section>
     
     <footer class="footer">
         <h3>전국철도노동조합 고양고속차량지부</h3>
+        <!-- '독자의 투고' 링크 및 발행인 정보 수정/복원 -->
         <a href="https://naver.me/GQSaxtyC" target="_blank">
-            <p>© 2025 전국철도노동조합 고양고속차량지부 all rights reserved</p>
+            <p>© 2025 전국철도노동조합 고양고속차량지부 all rights reserved &nbsp;&nbsp;|&nbsp;&nbsp; 발행인: 김숭식</p>
             <p class="mt-2 text-sm opacity-80">독자의 투고를 기다립니다.</p>
         </a>
     </footer>
 </body>
 </html>
-
-
-
-
-
