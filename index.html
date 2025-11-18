@@ -34,48 +34,40 @@
             margin-left: 0.25rem;
         }
         
-        /* --- 메인 이미지 스타일 수정 --- */
+        /* --- 메인 이미지 섹션 스타일 --- */
         .main-image-section {
             position: relative;
         }
-        /* a 태그 제거됨 */
+        
         .main-image-overlay {
             position: absolute;
-            inset: 0; /* top/bottom/left/right = 0 */
+            inset: 0; 
             display: flex;
-            flex-direction: column; /* 세로 정렬 */
-            justify-content: space-between; /* 상단과 하단으로 분리 */
+            flex-direction: column; 
+            /* 하단 정렬을 위해 justify-content를 flex-end로 설정 */
+            justify-content: flex-end; 
             align-items: center; /* 가로 중앙 정렬 */
-            background-color: rgba(0, 0, 0, 0.4); /* 어두운 오버레이 */
+            /* 텍스트 가독성을 위해 하단에만 그라데이션 오버레이 적용 (선택사항) */
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
             pointer-events: none; 
         }
-        
-        /* 상단 텍스트 (기존 크기) */
-        .overlay-text-top {
+
+        /* 하단 텍스트 스타일 */
+        .overlay-text-bottom {
             color: white;
             font-size: 3.75rem; /* 모바일 기준 크기 */
             font-weight: 900;
             text-align: center;
-            padding: 1.5rem 1rem 0 1rem; /* 상단 여백 */
-            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        /* 하단 텍스트 (3배 크기) */
-        .overlay-text-bottom {
-            color: white;
-            font-size: 3.75rem; /* 수정: 모바일 1.25rem * 3 */
-            font-weight: 900;
-            text-align: center;
-            padding: 0 1rem 1.5rem 1rem; /* 수정: 하단 여백 */
+            /* 요청하신 대로 하단 여백을 기존 1.5rem에서 2.5rem으로 확대 */
+            padding: 0 1rem 2.5rem 1rem; 
             text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.9);
+            line-height: 1.2;
         }
 
         @media (min-width: 768px) { /* 데스크탑에서 폰트 크기 */
-            .overlay-text-top {
-                font-size: 5.25rem; /* 기존 데스크탑 크기 */
-            }
             .overlay-text-bottom {
-                font-size: 5.25rem; /* 수정: 데스크탑 1.75rem * 3 */
+                font-size: 5.25rem; 
+                padding-bottom: 3.5rem; /* 데스크탑에서는 여백을 더 줌 */
             }
         }
         /* --- --- */
@@ -139,7 +131,10 @@
     <section class="main-image-section">
         <img src="images/night.jpg" alt="메인 이미지" class="w-full h-auto">
         <div class="main-image-overlay">
-            </div>
+            <h2 class="overlay-text-bottom">
+                12월 2일<br class="md:hidden"> 야간총회
+            </h2>
+        </div>
     </section>
 
     <section class="toc-section">
